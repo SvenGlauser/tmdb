@@ -81,6 +81,7 @@ h1 {
     padding: 20px;
 
     width: 750px;
+    max-width: 100%;
 
     display: flex;
     flex-wrap: wrap;
@@ -97,15 +98,11 @@ h1 {
 }
 
 .element .infos {
-    height: 300px;
-    width: calc(100% - 200px);
+    width: calc(100% - min(200px, 33%));
+
+    text-align: justify;
 
     padding: 10px;
-}
-
-.element .infos .description {
-    height: calc(100% - 25px);
-    overflow: hidden;
 }
 
 .element h3 {
@@ -119,8 +116,9 @@ h1 {
 }
 
 .element .img {
-    height: 300px;
+    aspect-ratio: 2/3;
     width: 200px;
+    max-width: 33%;
 
     box-shadow: 0 0 20px -10px white;
 
@@ -137,7 +135,7 @@ h1 {
     justify-content: space-between;
     margin-top: 20px;
     background-color: rgba(0,0,0,0.5);
-    padding: 5px 30px;
+    padding: 5px calc(min(30px,5px));
     box-shadow: 0 0 10px -5px white;
     align-items: center;
 }

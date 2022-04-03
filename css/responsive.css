@@ -1,0 +1,15 @@
+@media (max-width: 800px) {
+    #form div label {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .element .img {
+        display: none;
+    }
+
+    .element .infos {
+        width: 100%;
+    }
+}
