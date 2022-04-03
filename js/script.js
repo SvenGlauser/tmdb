@@ -21,7 +21,7 @@ async function change(page = 1) {
 }
 
 function findFilm(query) {
-    fetch("https://api.themoviedb.org/3/search/movie?api_key=15f9d7fec19ec6b5b9bc491acd508fe6&query=" + query + "&page=" + PAGE, {
+    fetch("https://api.themoviedb.org/3/search/movie?api_key=15f9d7fec19ec6b5b9bc491acd508fe6&language=fr&query=" + query + "&page=" + PAGE, {
         method: "GET"
     }).then(async result => {
         let result_films = await result.json()
@@ -36,7 +36,7 @@ function findFilm(query) {
 }
 
 function findSerie(query) {
-    fetch("https://api.themoviedb.org/3/search/tv?api_key=15f9d7fec19ec6b5b9bc491acd508fe6&query=" + query + "&page=" + PAGE, {
+    fetch("https://api.themoviedb.org/3/search/tv?api_key=15f9d7fec19ec6b5b9bc491acd508fe6&language=fr&query=" + query + "&page=" + PAGE, {
         method: "GET"
     }).then(async result => {
         let result_serie = await result.json()
