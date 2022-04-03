@@ -106,6 +106,23 @@ function getSerie(value) {
                         ${value.overview}
                     </div>
                 </div>
+                <div class="infos-popularity">
+                    <div>
+                        <span class="material-icons">live_tv</span>
+                    </div>
+                    <div>
+                        <span class="material-icons">language</span>
+                        ${value.original_language}
+                    </div>
+                    <div>
+                        <span class="material-icons">calendar_month</span>
+                        ${value.first_air_date}
+                    </div>
+                    <div>
+                        <span class="material-icons">star</span>
+                        ${value.vote_average}/10
+                    </div>
+                </div>
             </div>`
 }
 
@@ -116,6 +133,23 @@ function getFilm(value) {
                     <h3>${value.original_title}</h3>
                     <div class="description">
                         ${value.overview}
+                    </div>
+                </div>
+                <div class="infos-popularity">
+                    <div>
+                        <span class="material-icons">movie</span>
+                    </div>
+                    <div>
+                        <span class="material-icons">language</span>
+                        ${value.original_language}
+                    </div>
+                    <div>
+                        <span class="material-icons">calendar_month</span>
+                        ${value.release_date}
+                    </div>
+                    <div>
+                        <span class="material-icons">star</span>
+                        ${value.vote_average}/10
                     </div>
                 </div>
             </div>`

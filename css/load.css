@@ -1,0 +1,347 @@
+.load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: calc(100vh - var(--header-height));
+}
+
+.load .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 130px;
+    width: 130px;
+
+    border-radius: 50%;
+
+    animation: load 1s infinite;
+    animation-timing-function: linear;
+}
+
+.load .wrapper div {
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+
+    background: white;
+}
+
+.load ~ main {
+    display: none;
+}
+
+.load.hidden ~ main {
+    display: block;
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+        background: conic-gradient(aqua 50deg, white 50deg);
+    }
+    1% {
+        background: conic-gradient(aqua 51deg, white 51deg);
+    }
+    2% {
+        background: conic-gradient(aqua 52deg, white 52deg);
+    }
+    3% {
+        background: conic-gradient(aqua 53deg, white 53deg);
+    }
+    4% {
+        background: conic-gradient(aqua 54deg, white 54deg);
+    }
+    5% {
+        background: conic-gradient(aqua 55deg, white 55deg);
+    }
+    6% {
+        background: conic-gradient(aqua 56deg, white 56deg);
+    }
+    7% {
+        background: conic-gradient(aqua 57deg, white 57deg);
+    }
+    8% {
+        background: conic-gradient(aqua 58deg, white 58deg);
+    }
+    9% {
+        background: conic-gradient(aqua 59deg, white 59deg);
+    }
+    10% {
+        background: conic-gradient(aqua 60deg, white 60deg);
+    }
+    11% {
+        background: conic-gradient(aqua 61deg, white 61deg);
+    }
+    12% {
+        background: conic-gradient(aqua 62deg, white 62deg);
+    }
+    13% {
+        background: conic-gradient(aqua 63deg, white 63deg);
+    }
+    14% {
+        background: conic-gradient(aqua 64deg, white 64deg);
+    }
+    15% {
+        background: conic-gradient(aqua 65deg, white 65deg);
+    }
+    16% {
+        background: conic-gradient(aqua 66deg, white 66deg);
+    }
+    17% {
+        background: conic-gradient(aqua 67deg, white 67deg);
+    }
+    18% {
+        background: conic-gradient(aqua 68deg, white 68deg);
+    }
+    19% {
+        background: conic-gradient(aqua 69deg, white 69deg);
+    }
+    20% {
+        background: conic-gradient(aqua 70deg, white 70deg);
+    }
+    21% {
+        background: conic-gradient(aqua 71deg, white 71deg);
+    }
+    22% {
+        background: conic-gradient(aqua 72deg, white 72deg);
+    }
+    23% {
+        background: conic-gradient(aqua 73deg, white 73deg);
+    }
+    24% {
+        background: conic-gradient(aqua 74deg, white 74deg);
+    }
+    25% {
+        background: conic-gradient(aqua 75deg, white 75deg);
+    }
+    26% {
+        background: conic-gradient(aqua 76deg, white 76deg);
+    }
+    27% {
+        background: conic-gradient(aqua 77deg, white 77deg);
+    }
+    28% {
+        background: conic-gradient(aqua 78deg, white 78deg);
+    }
+    29% {
+        background: conic-gradient(aqua 79deg, white 79deg);
+    }
+    30% {
+        background: conic-gradient(aqua 80deg, white 80deg);
+    }
+    31% {
+        background: conic-gradient(aqua 81deg, white 81deg);
+    }
+    32% {
+        background: conic-gradient(aqua 82deg, white 82deg);
+    }
+    33% {
+        background: conic-gradient(aqua 83deg, white 83deg);
+    }
+    34% {
+        background: conic-gradient(aqua 84deg, white 84deg);
+    }
+    35% {
+        background: conic-gradient(aqua 85deg, white 85deg);
+    }
+    36% {
+        background: conic-gradient(aqua 86deg, white 86deg);
+    }
+    37% {
+        background: conic-gradient(aqua 87deg, white 87deg);
+    }
+    38% {
+        background: conic-gradient(aqua 88deg, white 88deg);
+    }
+    39% {
+        background: conic-gradient(aqua 89deg, white 89deg);
+    }
+    40% {
+        background: conic-gradient(aqua 90deg, white 90deg);
+    }
+    41% {
+        background: conic-gradient(aqua 91deg, white 91deg);
+    }
+    42% {
+        background: conic-gradient(aqua 92deg, white 92deg);
+    }
+    43% {
+        background: conic-gradient(aqua 93deg, white 93deg);
+    }
+    44% {
+        background: conic-gradient(aqua 94deg, white 94deg);
+    }
+    45% {
+        background: conic-gradient(aqua 95deg, white 95deg);
+    }
+    46% {
+        background: conic-gradient(aqua 96deg, white 96deg);
+    }
+    47% {
+        background: conic-gradient(aqua 97deg, white 97deg);
+    }
+    48% {
+        background: conic-gradient(aqua 98deg, white 98deg);
+    }
+    49% {
+        background: conic-gradient(aqua 99deg, white 99deg);
+    }
+    50% {
+        transform: rotate(180deg);
+        background: conic-gradient(aqua 100deg, white 100deg);
+    }
+    51% {
+        background: conic-gradient(aqua 99deg, white 99deg);
+    }
+    52% {
+        background: conic-gradient(aqua 98deg, white 98deg);
+    }
+    53% {
+        background: conic-gradient(aqua 97deg, white 97deg);
+    }
+    54% {
+        background: conic-gradient(aqua 96deg, white 96deg);
+    }
+    55% {
+        background: conic-gradient(aqua 95deg, white 95deg);
+    }
+    56% {
+        background: conic-gradient(aqua 94deg, white 94deg);
+    }
+    57% {
+        background: conic-gradient(aqua 93deg, white 93deg);
+    }
+    58% {
+        background: conic-gradient(aqua 92deg, white 92deg);
+    }
+    59% {
+        background: conic-gradient(aqua 91deg, white 91deg);
+    }
+    60% {
+        background: conic-gradient(aqua 90deg, white 90deg);
+    }
+    61% {
+        background: conic-gradient(aqua 89deg, white 89deg);
+    }
+    62% {
+        background: conic-gradient(aqua 88deg, white 88deg);
+    }
+    63% {
+        background: conic-gradient(aqua 87deg, white 87deg);
+    }
+    64% {
+        background: conic-gradient(aqua 86deg, white 86deg);
+    }
+    65% {
+        background: conic-gradient(aqua 85deg, white 85deg);
+    }
+    66% {
+        background: conic-gradient(aqua 84deg, white 84deg);
+    }
+    67% {
+        background: conic-gradient(aqua 83deg, white 83deg);
+    }
+    68% {
+        background: conic-gradient(aqua 82deg, white 82deg);
+    }
+    69% {
+        background: conic-gradient(aqua 81deg, white 81deg);
+    }
+    70% {
+        background: conic-gradient(aqua 80deg, white 80deg);
+    }
+    71% {
+        background: conic-gradient(aqua 79deg, white 79deg);
+    }
+    72% {
+        background: conic-gradient(aqua 78deg, white 78deg);
+    }
+    73% {
+        background: conic-gradient(aqua 77deg, white 77deg);
+    }
+    74% {
+        background: conic-gradient(aqua 76deg, white 76deg);
+    }
+    75% {
+        background: conic-gradient(aqua 75deg, white 75deg);
+    }
+    76% {
+        background: conic-gradient(aqua 74deg, white 74deg);
+    }
+    77% {
+        background: conic-gradient(aqua 73deg, white 73deg);
+    }
+    78% {
+        background: conic-gradient(aqua 72deg, white 72deg);
+    }
+    79% {
+        background: conic-gradient(aqua 71deg, white 71deg);
+    }
+    80% {
+        background: conic-gradient(aqua 70deg, white 70deg);
+    }
+    81% {
+        background: conic-gradient(aqua 69deg, white 69deg);
+    }
+    82% {
+        background: conic-gradient(aqua 68deg, white 68deg);
+    }
+    83% {
+        background: conic-gradient(aqua 67deg, white 67deg);
+    }
+    84% {
+        background: conic-gradient(aqua 66deg, white 66deg);
+    }
+    85% {
+        background: conic-gradient(aqua 65deg, white 65deg);
+    }
+    86% {
+        background: conic-gradient(aqua 64deg, white 64deg);
+    }
+    87% {
+        background: conic-gradient(aqua 63deg, white 63deg);
+    }
+    88% {
+        background: conic-gradient(aqua 62deg, white 62deg);
+    }
+    89% {
+        background: conic-gradient(aqua 61deg, white 61deg);
+    }
+    90% {
+        background: conic-gradient(aqua 60deg, white 60deg);
+    }
+    91% {
+        background: conic-gradient(aqua 59deg, white 59deg);
+    }
+    92% {
+        background: conic-gradient(aqua 58deg, white 58deg);
+    }
+    93% {
+        background: conic-gradient(aqua 57deg, white 57deg);
+    }
+    94% {
+        background: conic-gradient(aqua 56deg, white 56deg);
+    }
+    95% {
+        background: conic-gradient(aqua 55deg, white 55deg);
+    }
+    96% {
+        background: conic-gradient(aqua 54deg, white 54deg);
+    }
+    97% {
+        background: conic-gradient(aqua 53deg, white 53deg);
+    }
+    98% {
+        background: conic-gradient(aqua 52deg, white 52deg);
+    }
+    99% {
+        background: conic-gradient(aqua 51deg, white 51deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        background: conic-gradient(aqua 50deg, white 50deg);
+    }
+}
