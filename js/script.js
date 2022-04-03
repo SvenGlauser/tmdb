@@ -89,6 +89,9 @@ function mettreJour() {
                 for (let i = PAGE - 2; i <= PAGE + 2; i++)
                     pages.innerHTML += `<div onclick="change(${i})" ${i === PAGE ? 'class="select"' : ''}>${i}</div>`
         }
+
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 function getElement(value) {
