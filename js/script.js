@@ -69,9 +69,26 @@ function mettreJour() {
 
     pages.innerHTML = ""
 
-    for (let i = 1; i <= MAX_PAGE; i++) {
-        pages.innerHTML += `<div onclick="change(${i})" ${i === PAGE ? 'class="select"' : ''}>${i}</div>`
-    }
+    if (MAX_PAGE <= 5)
+        for (let i = 1; i <= MAX_PAGE; i++)
+            pages.innerHTML += `<div onclick="change(${i})" ${i === PAGE ? 'class="select"' : ''}>${i}</div>`
+    else
+        switch (MAX_PAGE - PAGE) {
+            case 0:
+            case 1:
+            case 2:
+                for (let i = MAX_PAGE - 4; i <= MAX_PAGE; i++)
+                    pages.innerHTML += `<div onclick="change(${i})" ${i === PAGE ? 'class="select"' : ''}>${i}</div>`
+                break
+            case (MAX_PAGE - 1):
+            case (MAX_PAGE - 2):
+                for (let i = 1; i <= 5; i++)
+                    pages.innerHTML += `<div onclick="change(${i})" ${i === PAGE ? 'class="select"' : ''}>${i}</div>`
+                break
+            default:
+                for (let i = PAGE - 2; i <= PAGE + 2; i++)
+                    pages.innerHTML += `<div onclick="change(${i})" ${i === PAGE ? 'class="select"' : ''}>${i}</div>`
+        }
 }
 
 function getElement(value) {
